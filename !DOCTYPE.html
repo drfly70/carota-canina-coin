@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carota Canina Coin - The Noble Meme Coin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="coin-symbol">⚡</span>
+                <span>CAROTA CANINA</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="coin-container">
+                <div class="coin" id="coin">
+                    <div class="coin-face coin-front">
+                        <div class="coin-inner">
+                            <div class="dog-portrait"></div>
+                            <div class="coin-text">CAROTA CANINA</div>
+                        </div>
+                    </div>
+                    <div class="coin-face coin-back">
+                        <div class="coin-inner">
+                            <div class="roman-symbol">SPQR</div>
+                            <div class="coin-text">MMXXV</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-main">CAROTA CANINA</span>
+                <span class="title-sub">The Noble Meme Coin of the Empire</span>
+            </h1>
+            <p class="hero-description">
+                From the ancient streets of Rome to the digital frontier - 
+                witness the rise of the most regal canine currency ever minted.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="flipCoin()">Flip the Coin</button>
+                <button class="btn btn-secondary">View Gallery</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-label">Market Cap</div>
+                    <div class="stat-value">Coming Soon</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Total Supply</div>
+                    <div class="stat-value">1,000,000,000</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Holders</div>
+                    <div class="stat-value">Growing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About the Empire</h2>
+                <p>Every great empire needs a noble guardian</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>The Legend of Carota Canina</h3>
+                    <p>In the grand tradition of Roman currency, Carota Canina represents more than just a meme coin - it's a testament to loyalty, nobility, and the timeless bond between human and canine.</p>
+                    <p>Our imperial mascot embodies the virtues of ancient Rome: <strong>Courage, Loyalty, and Dignity</strong>. Each coin minted carries the legacy of this noble companion.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <h4>⚔️ Battle-Tested</h4>
+                            <p>Forged in the fires of internet culture</p>
+                        </div>
+                        <div class="feature">
+                            <h4>🏛️ Historically Inspired</h4>
+                            <p>Classical Roman aesthetics meet modern memes</p>
+                        </div>
+                        <div class="feature">
+                            <h4>🐕 Community Driven</h4>
+                            <p>By the pack, for the pack</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="emperor-portrait"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Imperial Gallery</h2>
+                <p>Witness the majesty of our noble emperor</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal('coin1')">
+                    <div class="gallery-image" style="background-image: url('https://via.placeholder.com/400x400/DAA520/FFFFFF?text=Coin+1')">
+                        <div class="gallery-overlay">
+                            <span>Roman Denarius</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('bust1')">
+                    <div class="gallery-image" style="background-image: url('https://via.placeholder.com/400x400/CD853F/FFFFFF?text=Bust+1')">
+                        <div class="gallery-overlay">
+                            <span>Imperial Bust</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('portrait1')">
+                    <div class="gallery-image" style="background-image: url('https://via.placeholder.com/400x400/B8860B/FFFFFF?text=Portrait+1')">
+                        <div class="gallery-overlay">
+                            <span>Royal Portrait</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('coin2')">
+                    <div class="gallery-image" style="background-image: url('https://via.placeholder.com/400x400/DAA520/FFFFFF?text=Coin+2')">
+                        <div class="gallery-overlay">
+                            <span>Aureus Gold</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('bust2')">
+                    <div class="gallery-image" style="background-image: url('https://via.placeholder.com/400x400/CD853F/FFFFFF?text=Bust+2')">
+                        <div class="gallery-overlay">
+                            <span>Marble Sculpture</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('portrait2')">
+                    <div class="gallery-image" style="background-image: url('https://via.placeholder.com/400x400/B8860B/FFFFFF?text=Portrait+2')">
+                        <div class="gallery-overlay">
+                            <span>Emperor's Regalia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="tokenomics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Imperial Treasury</h2>
+                <p>The economics of empire</p>
+            </div>
+            <div class="tokenomics-grid">
+                <div class="tokenomics-chart">
+                    <div class="chart-container">
+                        <div class="chart-slice" style="--percentage: 40; --color: #DAA520">
+                            <span>40%</span>
+                        </div>
+                        <div class="chart-slice" style="--percentage: 30; --color: #CD853F">
+                            <span>30%</span>
+                        </div>
+                        <div class="chart-slice" style="--percentage: 20; --color: #B8860B">
+                            <span>20%</span>
+                        </div>
+                        <div class="chart-slice" style="--percentage: 10; --color: #F4A460">
+                            <span>10%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tokenomics-details">
+                    <div class="token-detail">
+                        <div class="token-color" style="background: #DAA520"></div>
+                        <div class="token-info">
+                            <h4>Community Treasury (40%)</h4>
+                            <p>Reserved for community rewards and development</p>
+                        </div>
+                    </div>
+                    <div class="token-detail">
+                        <div class="token-color" style="background: #CD853F"></div>
+                        <div class="token-info">
+                            <h4>Liquidity Pool (30%)</h4>
+                            <p>Ensuring smooth trading for all citizens</p>
+                        </div>
+                    </div>
+                    <div class="token-detail">
+                        <div class="token-color" style="background: #B8860B"></div>
+                        <div class="token-info">
+                            <h4>Marketing & Partnerships (20%)</h4>
+                            <p>Expanding the empire's reach</p>
+                        </div>
+                    </div>
+                    <div class="token-detail">
+                        <div class="token-color" style="background: #F4A460"></div>
+                        <div class="token-info">
+                            <h4>Team & Development (10%)</h4>
+                            <p>Building the future of the empire</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Imperial Campaign</h2>
+                <p>Our path to digital dominion</p>
+            </div>
+            <div class="roadmap-timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase I: Foundation</h3>
+                        <p>Launch website, establish community, create initial coin designs</p>
+                        <span class="timeline-date">Q1 2025</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase II: Expansion</h3>
+                        <p>Token launch, exchange listings, community growth</p>
+                        <span class="timeline-date">Q2 2025</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase III: Empire</h3>
+                        <p>NFT collection, merchandise, strategic partnerships</p>
+                        <span class="timeline-date">Q3 2025</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase IV: Legacy</h3>
+                        <p>Governance token, DAO launch, immortal meme status</p>
+                        <span class="timeline-date">Q4 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Carota Canina</h4>
+                    <p>The noble meme coin of the digital empire</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Whitepaper</a></li>
+                        <li><a href="#">Contract</a></li>
+                        <li><a href="#">Audit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Carota Canina. All rights reserved. Ave Caesar!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
