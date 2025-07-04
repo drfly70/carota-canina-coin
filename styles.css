@@ -349,3 +349,9 @@ footer {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+.spinning-coin,
+.spinning-coin .front,
+.spinning-coin .back {
+  transform: none !important;
+  animation: none !important;
+}
