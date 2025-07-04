@@ -291,3 +291,27 @@ footer {
     gap: 1rem;
   }
 }
+/* --- Lightbox Gallery Styles --- */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.gallery-grid a {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+.gallery-grid a:hover {
+  transform: scale(1.06);
+}
+.gallery-grid img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
